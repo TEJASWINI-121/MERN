@@ -3,27 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="form.css"> </a>
+    <br><br>
     <title>Document</title>
-    <style>
-        body {
-            background-color: lightblue;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
+    <div class = form>
+        <a href="index.html"> Home </a><br><br>
+        <a href="form.html"> FORM </a>
     <h1>FORM</h1>
     <form action="index.html">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
+        <!-- <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
         <label for="message">Message:</label>
         <textarea id="message" name="message"  required></textarea><br><br>
         <label for="gender">Gender</label>
         <input type="radio" id="male" name="gender">
         <input type="radio" id="female" name="gender">
-        <br><br>
-        <input type="submit" value="Submit">
+        <br><br> -->
+       <button onclick = "hi()">submit</button>
+        </form>
+        </div>
+        <p>Thank you for visiting my form page!</p>
+    <p>Feel free to fill out the form above.</p>
+    <div id="greet"></div>
+    <script>
+        // console.log("5");
+        // console.log(23%3);
+        
+        // console.log(23/3);
+        // function add(a, b) {
+        //     return a + b;
+        // }
+        // // console.log(add(15, 10)); 
+
+        // function stringss(a,b){
+        //     return a+b;
+        // }
+        // console.log(stringss("Hello, ", "World!"));
+
+        // function greet(name,age){
+        //     return `Hello, ${name}! You are ${age} years old.`;
+        // }
+        // console.log(greet("Alice", 30));
+        function hi() {
+            // Prevent the form from submitting
+            event.preventDefault();
+        
+        const name = document.getElementById("name").value;
+        document.getElementById("greet").innerHTML = `Hello, ${name}! Welcome to the form page.`;
+        }
+    </script>
 </body>
 </html>

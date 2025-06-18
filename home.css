@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(166, 125, 162);
+    color: #333;
+    text-align: center;
+}
+header{
+    background-color: #08a40d;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #08a40d;
+}

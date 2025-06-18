@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>4 Scrolling Pages</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+   
+    .page1 { 
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      background-color: lightcoral;
+      justify-content: center;
+      color: blue;
+      position: sticky;
+      top: 100px;
+       }
+    .page2 { 
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      background-color: lightyellow;
+      justify-content: center;
+      color: blue;
+      position: relative;
+      top: 100px;
+      right: 100px; }
+      .page3 { 
+      height: 100vh; /* Full viewport height */
+      display: flex;
+        justify-content: center;
+      color: blue;
+      position: relative;
+      top: 100px;
+      background-color: lightblue;
+      right: 100px; }
+      .page4 { 
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      justify-content: center;
+      background-color: lightgreen;
+      color: blue;
+      position: fixed;
+      top: 100px;
+    
+      width: 20%; /* Full width */}
+  </style>`
+</head>
+<body>
+  <div class="page1">
+    <h1>Page 1</h1>
+  </div>
+  <div class="section page2">
+    <h1>Page 2</h1>
+  </div>
+  <div class="section page3">
+    <h1>Page 3</h1>
+  </div>
+  <div class="section page4">
+    <h1>Page 4</h1>
+  </div>
+</body>
+</html>
