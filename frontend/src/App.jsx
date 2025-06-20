@@ -2,14 +2,34 @@ import { useState } from 'react'
 import Welcome from './Welcome'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import {useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Skills from './Skills'
-function App() {
+import Home from './Pages/Home'
+import About from './Pages/About'   
+import Services from './Pages/Services' 
+import Navbar from './Components/Navbar'
+import State from './Hooks/State'
+import Form from './Hooks/Form'
 
+import Effect from './Hooks/Effect'
+
+function App() {
+  
   return (
 <>
-{ }
+  <Navbar />
+  <Routes>
+  <Route path='/' element={<Home />}/>
+  <Route path='/about' element={<About />}/>
+  <Route path='/services' element={<Services />}/>
+  <Route path='/state' element={<State />}/>
+  <Route path='/form' element={<Form />}/>
+  <Route path='/effect' element={<Effect />}/> 
+ 
+
+  </Routes>
+  
   <Skills skill={['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript']} />
    <h1>Welcome</h1>
 
@@ -45,3 +65,5 @@ export default App
 // }
 
 // export default App
+
+//rafce
