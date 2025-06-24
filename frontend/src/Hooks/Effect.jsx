@@ -23,10 +23,11 @@ const Effect = () => {
                 {users.map((user) => (
                     <li key={user.id}>{user.name}
                     </li>
+                    
                 ))}
             </ul>
         </div>
     )
 }
 
-export default Effect
+export default Effect 
